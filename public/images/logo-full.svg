@@ -1,0 +1,20 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="100" rx="8" fill="#1a2332"/>
+  
+  <!-- Icon -->
+  <g transform="translate(30, 50)">
+    <!-- Leaf/Sprout icon - green -->
+    <!-- Left leaf -->
+    <path d="M -8 6 Q -14 -2 -12 -14 Q -8 -5 -6 0" fill="none" stroke="#84cc16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right leaf -->
+    <path d="M 8 6 Q 14 -2 12 -14 Q 8 -5 6 0" fill="none" stroke="#84cc16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Center stem -->
+    <line x1="0" y1="6" x2="0" y2="16" stroke="#84cc16" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Soil -->
+    <circle cx="0" cy="18" r="3.5" fill="#84cc16" opacity="0.6"/>
+  </g>
+  
+  <!-- Text: AnnSetu -->
+  <text x="80" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" letter-spacing="-0.5">AnnSetu</text>
+</svg>

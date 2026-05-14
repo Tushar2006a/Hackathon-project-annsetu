@@ -1,0 +1,138 @@
+/* ============================================
+   ANNSETU AUTH PAGES
+   Login / Register
+   ============================================ */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  padding-top: calc(var(--navbar-height) + var(--space-8));
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-10);
+}
+
+.auth-card__logo {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.auth-card__logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  color: var(--dark);
+}
+
+.auth-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.auth-card__subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-8);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.auth-form .input {
+  width: 100%;
+}
+
+.auth-form .btn {
+  width: 100%;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+  color: var(--text-light);
+  font-size: var(--fs-xs);
+}
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: var(--space-6);
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+.auth-footer a {
+  color: var(--accent-clay);
+  font-weight: var(--fw-medium);
+}
+
+/* Role Selector (Register) */
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.role-option {
+  text-align: center;
+  padding: var(--space-5) var(--space-3);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--duration-normal) ease;
+}
+.role-option:hover {
+  border-color: var(--accent-clay-light);
+}
+.role-option.selected {
+  border-color: var(--accent-clay);
+  background: rgba(156, 122, 91, 0.05);
+}
+.role-option__icon {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+.role-option__label {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--dark);
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: var(--space-6);
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .role-selector {
+    grid-template-columns: 1fr;
+  }
+}

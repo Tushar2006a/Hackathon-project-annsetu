@@ -1,0 +1,163 @@
+/* ============================================
+   ANNSETU DESIGN TOKENS — "Fresh Harvest"
+   Agriculture-Tech · Hyperlocal · Premium
+   ============================================ */
+:root {
+  /* ── Surface Colors (Warm Tonal Layers) ── */
+  --bg-primary: #fafaf5;
+  --bg-secondary: #f0f4ed;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.86);
+  --surface: #ffffff;
+  --surface-dim: #e8ece5;
+  --surface-container: #f0f4ed;
+  --surface-container-high: #e8ece5;
+  --surface-container-low: #f5f7f2;
+  --app-gradient: radial-gradient(120% 120% at 10% 0%, rgba(22, 163, 74, 0.08) 0%, rgba(255, 255, 255, 0) 55%),
+    radial-gradient(120% 120% at 90% 20%, rgba(249, 115, 22, 0.08) 0%, rgba(255, 255, 255, 0) 60%);
+  --card-gradient: linear-gradient(140deg, #ffffff 0%, #f6f8f2 100%);
+
+  /* ── Text Colors ── */
+  --dark: #1a2e1a;
+  --text-primary: #1a2e1a;
+  --text-secondary: #4a5d4a;
+  --text-muted: #7a8f7a;
+
+  /* ── Brand — Fresh Green (Primary) ── */
+  --green: #16a34a;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+
+  /* ── Brand — Earthy Brown (Secondary) ── */
+  --earth: #92400e;
+  --earth-50: #fff8f1;
+  --earth-100: #ffedd5;
+  --earth-200: #fed7aa;
+  --earth-500: #b45309;
+  --earth-600: #92400e;
+  --earth-700: #7c2d12;
+
+  /* ── Accent — Soft Orange ── */
+  --orange: #f97316;
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd5;
+  --orange-500: #f97316;
+  --orange-600: #ea580c;
+
+  /* ── Legacy Mappings (backward compat) ── */
+  --accent-clay: var(--earth);
+  --accent-clay-light: var(--earth-50);
+  --accent-clay-dark: var(--earth-700);
+  --accent-clay-container: var(--earth-100);
+
+  --accent-olive: var(--green-700);
+  --accent-olive-light: var(--green-50);
+  --accent-olive-container: var(--green-100);
+
+  --cta-amber: var(--green);
+  --cta-amber-light: var(--green-50);
+  --cta-amber-dark: var(--green-800);
+  --cta-amber-container: var(--green-100);
+  --cta-amber-warm: var(--orange);
+
+  /* ── Semantic Colors ── */
+  --success: #16a34a;
+  --success-light: rgba(22, 163, 74, 0.08);
+  --warning: #f59e0b;
+  --warning-light: rgba(245, 158, 11, 0.08);
+  --error: #dc2626;
+  --error-light: rgba(220, 38, 38, 0.06);
+  --error-container: #fef2f2;
+  --info: #2563eb;
+  --info-light: rgba(37, 99, 235, 0.06);
+
+  /* ── Outline & Border ── */
+  --border: #e2e8df;
+  --border-light: #eef2eb;
+  --outline: #dde5d9;
+  --outline-variant: #f0f4ed;
+
+  /* ── Inverse (for dark surfaces) ── */
+  --inverse-surface: #1a2e1a;
+  --inverse-on-surface: #f0fdf4;
+  --inverse-primary: #86efac;
+
+  /* ── Typography ── */
+  --font-heading: 'Sora', 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  --fs-xs: 0.6875rem;     /* 11px */
+  --fs-sm: 0.8125rem;     /* 13px */
+  --fs-body: 0.875rem;    /* 14px */
+  --fs-md: 1rem;          /* 16px */
+  --fs-lg: 1.125rem;      /* 18px */
+  --fs-xl: 1.25rem;       /* 20px */
+  --fs-2xl: 1.5rem;       /* 24px */
+  --fs-3xl: 2rem;         /* 32px */
+  --fs-4xl: 3rem;         /* 48px */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0em;
+  --ls-wide: 0.05em;
+
+  /* ── Spacing (4px grid) ── */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Radius ── */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Shadows (Green-Tinted Soft) ── */
+  --shadow-xs: 0 1px 2px rgba(22, 163, 74, 0.04);
+  --shadow-sm: 0 1px 3px rgba(22, 163, 74, 0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(22, 163, 74, 0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 24px rgba(22, 163, 74, 0.10), 0 4px 8px rgba(0,0,0,0.04);
+  --shadow-xl: 0 16px 48px rgba(22, 163, 74, 0.12);
+  --shadow-card: 0 1px 3px rgba(22, 163, 74, 0.06), 0 1px 2px rgba(0,0,0,0.03);
+
+  /* ── Transitions ── */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── App Layout ── */
+  --header-height: 56px;
+  --bottom-nav-height: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --content-max-width: 480px;
+}
